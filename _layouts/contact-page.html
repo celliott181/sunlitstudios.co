@@ -1,0 +1,26 @@
+---
+layout: page
+---
+
+<div>
+  <div class="relative bg-[#FFF9EB] px-6  flex flex-col md:flex-row items-center md:items-start min-h-screen gap-12">
+    {% if content %}
+    <div class="max-w-4xl">
+      {{ content }}
+    </div>
+    {% endif %}
+    <div class="max-w-4xl min-w-sm w-full">
+      <form>
+        <h1>Get in Touch</h1>
+        <div class="pb-4">
+          <label for="first-name" class="block text-sm font-medium text-gray-700">Name</label>
+          <input type="text" id="first-name" name="first-name" required class="w-full mt-1 block w-full px-3 py-2 bg-[#FFFFFF] border border-[#34342D] rounded-md shadow-sm focus:outline-none focus:ring-[#5C6E49] focus:border-[#5C6E49] sm:text-sm">
+        </div>
+        <div class="pb-4">
+          <label for="last-name" class="block text-sm font-medium text-gray-700">Name</label>
+          <input type="text" id="last-name" name="last-name" required class="w-full mt-1 block w-full px-3 py-2 bg-[#FFFFFF] border border-[#34342D] rounded-md shadow-sm focus:outline-none focus:ring-[#5C6E49] focus:border-[#5C6E49] sm:text-sm">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

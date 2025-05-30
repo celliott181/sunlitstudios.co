@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<div>
+  {% if page.cover %}
+  <div class="sticky top-0 bg-[#5C6E49] text-[#FFFFFF] pt-20 flex justify-center items-center inset-shadow-sm z-[-1]">
+    <div class="flex flex-col justify-center items-center px-20 py-20 max-w-xl md:max-w-3xl text-center">
+      <h1>{{ page.cover}}</h1>
+    </div>
+  </div>
+  {% endif %}
+  <div class="relative bg-[#FFF9EB] px-6 py-12 pt-30 inset-shadow-sm flex flex-col items-center min-h-screen">
+    <div class="max-w-4xl">
+      <p>{{ content }}</p>
+    </div>
+  </div>
+</div>
